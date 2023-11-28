@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+
+
+{% block del %}
+
+<form method="post">{% csrf_token %}
+    <p> are you sure? {{notes.title}}</p>
+
+    <input type="submit" class="btn btn-danger" value="Confirm"/>
+
+
+</form>
+
+
+
+{% endblock %}

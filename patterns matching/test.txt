@@ -1,0 +1,5 @@
+will append to the end of the file
+will append to the end of the file
+will overwrite any existing contentwill overwrite any existing contentwill overwrite any existing content
+create a file, returns an error if the file exist
+create a file, returns an error if the file exist

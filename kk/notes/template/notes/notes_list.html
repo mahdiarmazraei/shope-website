@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+
+    <h1>teese are the notes:</h1>
+
+    <ul>
+        {% for note in notes %}
+            <li>{{note.title}}</li>
+            <a class="btn btn-primary" href="{% url 'notes.update' pk=note.id %}" >go</a>
+
+
+        {% endfor %}
+    </ul>
+    <a  class="btn btn-primary btn-lg btn-block" href="{% url 'notes.new' %}"> add note</button>
+
+
+{% endblock %}
+       
